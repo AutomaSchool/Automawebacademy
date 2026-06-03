@@ -1,0 +1,104 @@
+# Especificación del Proyecto: Sitio Web AUTOMA
+
+## 1. Identidad y Objetivo
+- *Nombre de la academia:* AUTOMA
+- *Marca personal:* Lucrecia Yuzek - Especialista en Inteligencia Artificial y Automatización.
+- *Misión:* Ayudar a emprendedores y profesionales a incorporar IA en sus negocios mediante formación, mentorías y soluciones prácticas.
+- *Objetivo técnico:* Crear una Landing Page moderna, segura, rápida y responsiva usando Cursor (HTML, CSS y Vanilla JavaScript).
+
+## 2. Estructura de la Página (Single Page Application)
+1. *Hero principal:* Título impactante, subtítulo (misión) y botón CTA.
+2. *Quién soy:* Breve bio de Lucrecia Yuzek.2. *Quién soy:* Breve bio de Lucrecia Yuzek. Incluir un espacio para foto profesional (archivo local lucrecia.jpg) al lado del texto, usando un diseño de columnas limpio, moderno y corporativo, con bordes redondeados suaves (evitar estilos sobrecargados).
+3. *Cursos y mentorías:* Tarjetas (cards) con la oferta educativa.
+4. *Casos de alumnos:* Testimonios o casos de éxito.
+5. *Canal de YouTube:* Sección para destacar el contenido de video (@automaaiagency).
+6. *Lead magnet gratuito:* Espacio para descarga de recurso a cambio de email.
+7. *Formulario de contacto:* Formulario simple y seguro.
+8. *Sección pequeña:* "Automatizaciones para empresas".
+
+## 3. Requisitos de Diseño y UI/UX
+- *Estilo principal:* Tarjetas con efecto Glassmorphism (fondo translúcido, desenfoque).
+- *Tipografía:* Inter, Plus Jakarta Sans o Manrope (limpia y moderna).
+- *Regla de Proporción de Colores:*
+  - 70% Fondo: Azul oscuro (#0B1120)
+  - 20% Texto y elementos: Blanco (#FFFFFF)
+  - 10% Acentos: Verde menta (#5EF2B6)
+- *Reglas estrictas de color:*
+  - El *Verde menta* SÓLO se usará para: Botones CTA, indicadores de éxito, efectos hover e íconos estratégicos.
+  - El *Azul eléctrico (#00AEEF)* SÓLO se usará para bordes muy finos en las tarjetas y contenedores.
+  - El *Azul oscuro (#0B1120)* debe respetarse como el color dominante absoluto.
+
+## 4. Requisitos de Seguridad y Buenas Prácticas
+- *Formularios:* El formulario de contacto y captura de leads debe tener validación en el frontend (evitar envíos vacíos o correos mal formados) y sanitización básica para prevenir ataques XSS.
+- *Enlaces:* Todos los links externos (YouTube, redes) deben usar rel="noopener noreferrer".
+- *Código limpio:* Estructura semántica de HTML5, sin frameworks innecesarios, y CSS ordenado para fácil mantenimiento.
+## 5. Mejoras Visuales (Fase 2)
+- *Fondo con profundidad:* El fondo azul oscuro (#0B1120) no debe ser plano. Agregar gradientes radiales sutiles o "luces de fondo" (glow effects) desenfocadas en azul eléctrico para darle un aspecto tecnológico y que el glassmorphism resalte.
+- *Hero Section (Principal):* Dividir en dos columnas. A la izquierda el texto y el botón. A la derecha, crear un contenedor estilizado que funcione como placeholder para una futura imagen o dashboard abstracto.
+- *Íconos y Dinam ismo:* Integrar la librería Phosphor Icons o FontAwesome. Agregar íconos junto a los títulos de las secciones y adentro de los botones.
+- *Animaciones de entrada:* Agregar un efecto de "fade-in" suave y desplazamiento hacia arriba (reveal) cuando la página carga y a medida que se hace scroll, para que no se vea estática.
+
+## 6. *Efecto de Tipeo (Typewriter):* En la sección Hero principal, el título o el subtítulo debe tener un efecto de animación de "máquina de escribir" (escribiéndose y borrándose automáticamente) programado en script.js.
+
+## 7.  Detalles de Íconos y Micro-Animaciones
+- *Ícono "Quién soy":* Cambiar el ícono actual de "persona" por uno mucho más amigable (ej. una mano saludando o un emoji/ícono cálido).
+- *Animación de Foto:* El contenedor de la foto de perfil debe tener una animación CSS de movimiento continuo (efecto "flotar" o levitar suavemente de arriba hacia abajo).
+- *Animación Gorrito:* El ícono del gorro de graduación en la sección de Cursos debe tener una animación de balanceo o pequeño salto (bounce/tilt) continuo o intermitente.
+- *Animación Regalo (Moñito):* El ícono del recurso gratuito debe tener un efecto de "apertura", vibración o latido (pulse/shake) para incentivar la descarga.
+
+## 8 . Pie de Página (Footer)
+- *Firma de Autor:* El pie de página debe terminar con la frase "by Lucrecia Yuzek".
+- *Estilo de la firma:* Esa frase específica ("by Lucrecia Yuzek") debe estar en una tipografía cursiva, suave y elegante (importar una fuente como 'Caveat', 'Dancing Script' o similar desde Google Fonts) para simular una firma personal. Debe tener un tamaño ligeramente mayor o un color que la haga destacar sutilmente.
+
+
+## 9 Spec de Rediseño UI para AUTOMA (Instrucciones para Cursor)
+
+## 1. Contexto del Proyecto y Audiencia
+Rediseño de la landing page de la academia "AUTOMA". El objetivo es transicionar de un estilo "Tech Oscuro" a un diseño "Humano, Limpio y Profesional". La interfaz debe generar confianza y empatía, dirigida principalmente a emprendedores y profesionales mayores de 45 años que buscan incorporar tecnología.
+
+## 2. Variables de Estilo Globales (Cambio de Tema)
+Actualizar el archivo de estilos (CSS puro, Tailwind, o el framework en uso) con la siguiente paleta:
+*   **Fondo Principal (Background):** Blanco (`#FFFFFF` o un gris ultra claro `#F8F9FA`). Eliminar por completo el fondo oscuro actual en todas las secciones.
+*   **Texto Principal (Text/Typography):** Negro o Gris Carbón (ej. `#111827` o `#1A1A1A`) para garantizar legibilidad óptima sobre el fondo claro. 
+*   **Color de Acento (Accent/Brand):** Azul Neón (ej. `#00D4FF` o `#00FFFF`). Absolutamente todos los elementos que actualmente están en verde (iconos, bordes de tarjetas, botones primarios, figuras geométricas, textos destacados) deben pasar a este tono azul neón.
+
+## 3. Rediseño de la Sección Hero (Primera vista)
+*   **Eliminar Elemento:** Borrar el contenedor derecho que muestra el "Panel IA" (el cuadro oscuro con barras de estadísticas y porcentajes).
+*   **Nueva Imagen Hero:** En el espacio liberado a la derecha, insertar una imagen fotográfica. 
+    *   *Contenido de la foto:* Profesionales maduros (hombres/mujeres en sus 40s/50s) en un entorno de trabajo colaborativo o estudiando frente a una laptop.
+    *   *Estilo visual:* La imagen debe tener un fondo que se funda con transparencia (fade out) hacia el lado izquierdo, integrándose de manera fluida y de punta a punta con el fondo blanco de la web.
+*   **Botón Principal (Call to Action):** Reemplazar el botón actual por uno de menor fricción para el usuario que recién llega.
+    *   *Nuevo texto sugerido:* "Descargar Prompt Kit" 
+    *   *Estilo:* Fondo del botón en azul neón con texto en negro para generar contraste, o viceversa.
+
+## 4. Reubicación de Componentes
+*   **Sección de Consulta:** Extraer el botón de "Agendar una consulta" del Hero. Crear un nuevo bloque o insertarlo en una sección inferior (por ejemplo, después de "Cursos y mentorías" o en el bloque de "Contacto").
+
+## 5. Actualización de Secciones Específicas
+Asegurar que las siguientes tarjetas y secciones adopten el nuevo "Light Mode":
+*   **Sección "Quién soy":** Fondo blanco, texto oscuro. Icono de la mano saludando (`wave`) pasa a azul neón.
+*   **Sección "Cursos y mentorías":** Fondo blanco, texto oscuro. Icono de birrete/educación pasa a azul neón. 
+*   **Sección "Recurso gratuito":** Fondo blanco, texto oscuro. Icono de regalo pasa a azul neón. Los bordes de las tarjetas que antes eran grises sutiles sobre fondo negro, ahora pueden ser un gris muy claro (`#E5E7EB`) o tener una sombra muy suave (`box-shadow`) para separarlos del fondo blanco.
+
+
+# 10. Actualización de UI para AUTOMA (Instrucciones para Cursor)
+
+## 1. Corrección de Color: Azul Eléctrico / Neón Auténtico
+*   **Problema:** El color generado anteriormente quedó como un "celeste" claro y lavado.
+*   **Acción:** Reemplazar ABSOLUTAMENTE TODOS los elementos celestes por un Azul vibrante, profundo y eléctrico (basado en la referencia del usuario).
+*   **Código Hexadecimal Sugerido:** Usar `#0047FF` (Azul eléctrico puro) o `#0033FF`.
+*   **Elementos a impactar:**
+    *   Textos destacados (ej. "resultados reales").
+    *   Botón principal ("Descargar Prompt Kit").
+    *   Iconos de las secciones (Manito de "Quién soy", Gorrito de "Cursos", Regalo de "Recurso gratis").
+
+## 2. Ajustes al Logo Textual "AUTOMA" (Cabecera/Navbar)
+*   **Color:** Debe usar el nuevo Azul vibrante (`#0047FF`).
+*   **Tamaño y Posición:** Hacer la letra visiblemente más grande (ej. `font-size: 2rem;` o clase `text-3xl`). Bajarlo un poco para que quede mejor alineado (ej. `transform: translateY(4px);` o ajustando el `margin-top`).
+*   **Tipografía (Estilo):** Cambiar a una fuente más amigable, moderna y ligeramente redondeada (como *Poppins*, *Nunito* o *Montserrat*) y aplicar una ligera inclinación (`font-style: italic;`).
+
+## 3. Fondo de la Sección Hero (Primera vista completa)
+*   **Problema:** El fondo 100% blanco se siente vacío y carece del estilo tecnológico de la referencia.
+*   **Acción:** Agregar un fondo texturizado que ocupe todo el ancho de la pantalla (`100vw`) SOLO en esta primera sección. El fondo debe ir por detrás de los textos y de la foto de los profesionales.
+*   **Contenido del Fondo:** Generar o insertar un patrón visual (pattern SVG o imagen de fondo) que contenga elementos de IA muy sutiles (iconos de redes neuronales, logos difuminados de herramientas tech, nodos conectados).
+*   **Estilo:** Debe ser como una "marca de agua". Es crucial que tenga una opacidad muy baja (ej. `opacity: 0.05` a `0.1`) para que el texto negro de "Incorporá IA..." siga siendo perfectamente legible y no compita visualmente.
